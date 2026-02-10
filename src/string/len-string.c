@@ -2,14 +2,16 @@
 #include <string.h>
 
 int main() {
-    // Declare and initialize a string message
-    char message[] = "Hello";
+    char message[10];
 
-    // Use strlen() to calculate the number of characters in the message
-    int length = strlen(message);
+    message[0] = 'h';
+    message[1] = 'e';
+    message[2] = 'l';
+    message[3] = 'l';
+    message[4] = 'o';
+    message[5] = '\0';
 
-    // Print the length of the message
-    printf("Length of the message: %d\n", length);  // Output: 5
+    printf("Length of the message: %ld\n", strlen(message)); 
 
     return 0;
 }
