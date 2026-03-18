@@ -17,7 +17,9 @@ int main() {
 
     if (ans.size() > 1) {
         cout << ans.at(ans.size()-2) << ans.at(ans.size()-1) << endl;
-    } else {
+    } else if (a == 0 || b == 0 || c == 0){
         cout << ans.at(ans.size()-1) << endl;
+    } else {
+        cout << 0 << ans.at(ans.size()-1) << endl;
     }
 }
