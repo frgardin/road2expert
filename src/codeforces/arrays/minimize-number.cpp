@@ -28,12 +28,17 @@ int find(int &n)
     return l;
 }
 
+int findOptimized(int &n)
+{
+    return __builtin_ctz(n);
+}
+
 int minimizeNumber(vi &v)
 {
     int ans = 1000000001;
     for (int i : v)
     {
-        ans = min(find(i), ans);
+        ans = min(findOptimized(i), ans);
     }
     return ans;
 }
